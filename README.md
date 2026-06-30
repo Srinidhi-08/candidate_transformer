@@ -27,6 +27,24 @@ A high-performance, NLP-powered Extract, Transform, Load (ETL) pipeline for pars
    Ensure PostgreSQL is running. The pipeline will automatically create the required tables. You can override credentials via environment variables:
    `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`
 
+## Custom Output Schemas (No-Code HR Customization)
+The pipeline is designed to be highly modular. Non-technical users (like HR managers) can create highly specific output formats without touching a single line of Python code by simply adding a schema to the `config/pipeline_config.yaml` file.
+
+**Example: Custom HR View**
+If an HR manager only wants to see contact info and skills, they can add this to the `schemas` block in the config:
+```yaml
+    hr_summary:
+      description: "Custom HR view: Only shows contact info and skills."
+      include_fields:
+        - full_name
+        - emails
+        - phones
+        - skills
+      field_rename: 
+        full_name: "Candidate Name"
+```
+Then they just run the pipeline with `--schema hr_summary` and the JSON will be perfectly filtered and renamed for their specific Applicant Tracking System!
+
 ## Exact Run Steps
 
 **1. Process a single resume:**
