@@ -1,0 +1,484 @@
+# ============================================================
+# Multi-Source Candidate Data Transformer — Pipeline Config
+# ============================================================
+# Changing values here changes pipeline behaviour WITHOUT
+# touching any Python source files.
+# ============================================================
+
+pipeline:
+  version: "1.0.0"
+  name: "Multi-Source Candidate Data Transformer"
+  log_level: "INFO"
+
+# ------------------------------------------------------------
+# MODULE 2  –  File Validation & Classification
+# ------------------------------------------------------------
+file_types:
+  supported:
+    structured:   ["csv", "json"]
+    unstructured: ["pdf", "docx", "txt", "png", "jpg", "jpeg", "rtf", "html"]
+  max_file_size_bytes: 26214400   # 25 MB
+  min_file_size_bytes: 1
+
+  # Binary magic-number signatures (hex prefix)
+  binary_signatures:
+    pdf:  "255044462d"          # %PDF-
+    docx: "504b0304"            # PK (ZIP)
+    png:  "89504e470d0a1a0a"    # PNG header
+    jpg:  "ffd8ff"
+    jpeg: "ffd8ff"
+
+  # For DOCX: required entry inside the ZIP
+  docx_required_zip_entry: "word/document.xml"
+
+  # Lightweight text-format checks (first N lines only)
+  lightweight_parse_line_limit: 5
+
+# ------------------------------------------------------------
+# MODULE 3  –  Source & Referral Management
+# ------------------------------------------------------------
+sources:
+  known_types:
+    - resume_upload
+    - ats
+    - linkedin
+    - github
+    - referral
+    - csv_bulk_import
+    - api
+    - manual
+    - unknown
+
+  # Ordered detection chain
+  detector_priority:
+    - upload_channel
+    - request_metadata
+    - content_fallback
+
+  # Metadata markers → source type
+  metadata_markers:
+    linkedin:     "linkedin"
+    github:       "github"
+    greenhouse:   "ats"
+    lever:        "ats"
+    workday:      "ats"
+    api-key:      "api"
+    bulk-import:  "csv_bulk_import"
+
+  # Content-sample hints (last-resort fallback)
+  content_hints:
+    linkedin: ["linkedin.com/in/", "linkedin profile"]
+    github:   ["github.com/", "github profile"]
+  content_scan_chars: 2000
+
+  # Confidence bonuses
+  verified_referral_bonus: 0.10
+
+  # Reliability scores per source (used by Confidence Engine)
+  reliability_scores:
+    ats:            0.95
+    linkedin:       0.85
+    github:         0.75
+    resume_upload:  0.70
+    referral:       0.65
+    api:            0.80
+    csv_bulk_import: 0.60
+    manual:         0.50
+    unknown:        0.30
+
+# ------------------------------------------------------------
+# MODULE 4  –  Parser Selection
+# ------------------------------------------------------------
+parsers:
+  mapping:
+    csv:   CsvParser
+    json:  JsonParser
+    pdf:   PdfParser
+    docx:  DocxParser
+    txt:   TxtParser
+    png:   ImageOcrParser
+    jpg:   ImageOcrParser
+    jpeg:  ImageOcrParser
+    rtf:   RtfParser
+    html:  HtmlParser
+    htm:   HtmlParser
+
+# ------------------------------------------------------------
+# MODULE 6  –  Candidate Object Builder (Extraction)
+# ------------------------------------------------------------
+extraction:
+  # NLP model.  Falls back to regex if not installed.
+  nlp_model: "en_core_web_sm"
+  fallback_to_regex: true
+
+  # How many lines from the top to scan for candidate name
+  name_scan_lines: 10
+
+  # Lines to skip when looking for name (common resume headings)
+  name_excluded_headers:
+    - resume
+    - curriculum vitae
+    - cv
+    - profile
+    - summary
+    - contact
+    - contact information
+    - experience
+    - education
+    - skills
+    - projects
+    - certifications
+    - objective
+
+  # Section header detection
+  section_headers:
+    summary:
+      - summary
+      - professional summary
+      - objective
+      - career objective
+      - profile
+      - about me
+      - overview
+    experience:
+      - experience
+      - work experience
+      - professional experience
+      - employment history
+      - career history
+      - work history
+      - internships
+      - internships and experiences
+      - internships & experiences
+      - internship and experience
+      - professional background
+      - employment
+      - experience & internships
+      - experiences
+    education:
+      - education
+      - academic background
+      - academic qualifications
+      - qualifications
+      - educational background
+      - education background
+    skills:
+      - skills
+      - technical skills
+      - core competencies
+      - competencies
+      - expertise
+      - key skills
+      - technologies
+      - skills & technologies
+      - skills and technologies
+    certifications:
+      - certifications
+      - certificates
+      - licenses
+      - licenses & certifications
+      - professional certifications
+    projects:
+      - projects
+      - personal projects
+      - key projects
+      - notable projects
+      - side projects
+      - academic projects
+      - technical projects
+
+  # Recognized as section boundaries but NOT collected into canonical fields
+  ignored_sections:
+    - awards
+    - achievements
+    - publications
+    - languages
+    - interests
+    - hobbies
+    - references
+    - volunteer
+    - volunteering
+    - volunteer work
+    - volunteer experience
+    - extracurricular
+    - extracurricular activities
+    - extra-curricular
+    - extra-curricular activities
+    - competitive programming
+    - coding profiles
+    - coding platforms
+    - profiles
+    - activities
+    - leadership
+    - honors
+    - honors & awards
+    - accomplishments
+
+  # Skill extraction
+  skills:
+    section_confidence:  0.90   # skill found inside skills section
+    body_confidence:     0.60   # skill found anywhere else in text
+
+    canonical_list:
+      # Languages
+      - python
+      - java
+      - javascript
+      - typescript
+      - "c++"
+      - "c#"
+      - go
+      - rust
+      - ruby
+      - php
+      - swift
+      - kotlin
+      - scala
+      - r
+      - matlab
+      - bash
+      - shell
+      # Web
+      - html
+      - css
+      - react
+      - angular
+      - vue
+      - "node.js"
+      - nextjs
+      - django
+      - flask
+      - fastapi
+      - spring
+      - laravel
+      - graphql
+      - "rest api"
+      - restful
+      # Data / ML
+      - sql
+      - postgresql
+      - mysql
+      - mongodb
+      - redis
+      - elasticsearch
+      - pandas
+      - numpy
+      - scikit-learn
+      - tensorflow
+      - pytorch
+      - keras
+      - "machine learning"
+      - "deep learning"
+      - nlp
+      - "natural language processing"
+      - "computer vision"
+      - "data science"
+      - "data analysis"
+      # Cloud / DevOps
+      - aws
+      - azure
+      - gcp
+      - docker
+      - kubernetes
+      - terraform
+      - ansible
+      - jenkins
+      - "ci/cd"
+      - git
+      - github
+      - gitlab
+      - linux
+      - "object storage"
+      - kafka
+      - rabbitmq
+      - airflow
+      # Misc
+      - "agile"
+      - scrum
+      - jira
+      - confluence
+      - "microservices"
+      - "system design"
+      - "api design"
+
+  # Degree keywords for education extraction
+  degree_keywords:
+    - "b.tech"
+    - btech
+    - "b.e"
+    - "b.sc"
+    - bsc
+    - bachelor
+    - "m.tech"
+    - mtech
+    - "m.sc"
+    - msc
+    - master
+    - mba
+    - phd
+    - "ph.d"
+    - diploma
+    - associate
+    - "bachelor of"
+    - "master of"
+    - "doctor of"
+
+  # Structured data field aliases (CSV / JSON column name mapping)
+  field_aliases:
+    full_name:   ["name", "full_name", "candidate_name", "fullname", "applicant_name"]
+    email:       ["email", "email_address", "emailaddress", "e-mail"]
+    phone:       ["phone", "phone_number", "phonenumber", "mobile", "cell", "contact_number"]
+    linkedin:    ["linkedin", "linkedin_url", "linkedin_profile"]
+    github:      ["github", "github_url", "github_profile"]
+    headline:    ["headline", "title", "job_title", "current_title", "position"]
+    summary:     ["summary", "profile", "about", "bio", "description"]
+    city:        ["city", "location_city"]
+    region:      ["region", "state", "province", "location_state"]
+    country:     ["country", "location_country"]
+    company:     ["company", "current_company", "employer", "organization"]
+    years_exp:   ["years_experience", "years_exp", "experience_years", "total_experience"]
+
+# ------------------------------------------------------------
+# MODULE 8  –  Data Validation
+# ------------------------------------------------------------
+validation:
+  email_regex: '^[\w.+-]+@[\w-]+\.[\w.-]+$'
+  phone_min_digits: 7
+  url_schemes: ["http", "https"]
+
+# ------------------------------------------------------------
+# MODULE 11  –  Candidate Matching
+# ------------------------------------------------------------
+matching:
+  priority:
+    - email
+    - phone
+    - linkedin
+    - github
+    - name_similarity
+  name_similarity_threshold: 0.85
+
+# ------------------------------------------------------------
+# MODULE 12  –  Merge Engine
+# ------------------------------------------------------------
+merge:
+  policy: "source_priority"   # source_priority | latest | confidence
+
+# ------------------------------------------------------------
+# MODULE 13  –  Conflict Resolution
+# ------------------------------------------------------------
+conflict_resolution:
+  strategy: "source_priority"  # source_priority | confidence_score | latest_update | manual_review
+  manual_review_fields: []     # fields that always go to manual review
+
+# ------------------------------------------------------------
+# MODULE 14  –  Confidence Engine
+# ------------------------------------------------------------
+confidence:
+  weights:
+    source_reliability:      0.25
+    validation_success:      0.20
+    extraction_accuracy:     0.20
+    matching_strength:       0.15
+    cross_source_agreement:  0.15
+    freshness:               0.05
+
+  freshness_decay_days: 365   # after this many days confidence starts decaying
+
+# ------------------------------------------------------------
+# MODULE 15  –  Database
+# ------------------------------------------------------------
+database:
+  host:         "localhost"
+  port:         5432
+  name:         "candidate_db"
+  user:         "postgres"
+  password:     ""
+  pool_size:    10
+  max_overflow: 20
+  echo:         false
+
+# ------------------------------------------------------------
+# PHASE 3  –  Projection Layer
+# ------------------------------------------------------------
+projection:
+  default_schema: "canonical"
+  missing_value_policy: "null"   # null | exclude | empty_string
+  output_format: "json"
+
+  schemas:
+    full:
+      description: "Complete canonical record with all metadata"
+      include_fields: ["*"]
+      include_confidence: true
+      include_provenance: true
+      field_rename: {}
+
+    canonical:
+      description: "Clean canonical profile — matches the defined schema exactly"
+      include_fields:
+        - candidate_id
+        - full_name
+        - emails
+        - phones
+        - location
+        - links
+        - headline
+        - years_experience
+        - skills
+        - experience
+        - education
+        - certifications
+        - projects
+        - provenance
+        - overall_confidence
+      include_confidence: true
+      include_provenance: true
+      field_rename: {}
+
+    ats:
+      description: "ATS-friendly output — core fields only"
+      include_fields:
+        - full_name
+        - emails
+        - phones
+        - location
+        - headline
+        - years_experience
+        - skills
+        - experience
+        - education
+      include_confidence: false
+      include_provenance: false
+      field_rename:
+        full_name: "name"
+        emails:    "email"
+        phones:    "phone"
+
+    linkedin:
+      description: "LinkedIn-style profile fields"
+      include_fields:
+        - full_name
+        - headline
+        - summary
+        - location
+        - skills
+        - experience
+        - education
+        - "links.linkedin"
+      include_confidence: false
+      include_provenance: false
+      field_rename: {}
+
+    minimal:
+      description: "Name and contact info only"
+      include_fields:
+        - full_name
+        - emails
+        - phones
+        - location
+        - "links.linkedin"
+        - "links.github"
+      include_confidence: false
+      include_provenance: false
+      field_rename: {}

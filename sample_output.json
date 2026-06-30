@@ -1,0 +1,1487 @@
+[
+  {
+    "candidate_id": "72f3c6af93ca483b8ca1ef8f3f0fa9a8",
+    "full_name": "Accountant",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2012 Accountant City ,"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northern Maine Community College",
+        "degree": "Associate Degree",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 1994,
+        "grade": "3.41"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Defense Financial Manager, CDFM, May",
+        "issuer": null,
+        "date": "2005",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.5389,
+    "_meta": {
+      "file": "10554236.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "c150baaf456f48b4a6000e67b45a24d8",
+    "full_name": "Staff Accountant",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Staff Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to October 2014 Company Name ï¼​ City"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of North Carolina",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2010,
+        "grade": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.5389,
+    "_meta": {
+      "file": "10674770.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "72f3c6af93ca483b8ca1ef8f3f0fa9a8",
+    "full_name": "Accountant",
+    "emails": [],
+    "phones": [
+      "28644727092"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2012 Accountant City ,"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2015 Company Name ï¼​ City"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northern Maine Community College",
+        "degree": "Associate Degree",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 1994,
+        "grade": "3.41"
+      },
+      {
+        "institution": "Computer Applications Specialist Certificate Program",
+        "degree": null,
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2008,
+        "grade": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Defense Financial Manager, CDFM, May",
+        "issuer": null,
+        "date": "2005",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "phones",
+        "source": "manual",
+        "method": "regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.6736,
+    "_meta": {
+      "file": "11163645.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "70ce5b80834249e58d6456548d7b63d7",
+    "full_name": "Senior Accountant",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to Current Senior Accountant City ,"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Goizueta Business School",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2007,
+        "grade": "3.63/4.0"
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.5167,
+    "_meta": {
+      "file": "11759079.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "70ce5b80834249e58d6456548d7b63d7",
+    "full_name": "Senior Accountant",
+    "emails": [],
+    "phones": [
+      "20012002"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "sql",
+        "confidence": 0.9,
+        "sources": [
+          "nlp_section"
+        ]
+      },
+      {
+        "name": "r",
+        "confidence": 0.6,
+        "sources": [
+          "nlp_body"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to Current Senior Accountant City ,"
+      },
+      {
+        "company": null,
+        "title": "Senior Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "Current Company Name City , State"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Goizueta Business School",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2007,
+        "grade": "3.63/4.0"
+      },
+      {
+        "institution": "TEMPLE UNIVERSITY",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2002,
+        "grade": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Public Accountant, New York State, Date",
+        "issuer": null,
+        "date": null,
+        "url": null
+      },
+      {
+        "name": "of issued: 03/04/, License number: 117205",
+        "issuer": null,
+        "date": "2015",
+        "url": null
+      },
+      {
+        "name": "Additional Information",
+        "issuer": null,
+        "date": null,
+        "url": null
+      },
+      {
+        "name": "Activities: Vice President, APS (Accounting Professional Society) at Temple University",
+        "issuer": null,
+        "date": "2001",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "phones",
+        "source": "manual",
+        "method": "regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "skills",
+        "source": "manual",
+        "method": "nlp_phrase_matcher",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.6958,
+    "_meta": {
+      "file": "12065211.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "cef21edae39a4a268551d133c46be293",
+    "full_name": "Career Focus\nAccomplished",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": "Workbench",
+      "region": "MS",
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": ", State Investment Accountant 10/2012 to"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Delaware",
+        "degree": "Master of Business Administration",
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2008,
+        "grade": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "nlp_ner",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "location",
+        "source": "manual",
+        "method": "nlp_gpe",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.5167,
+    "_meta": {
+      "file": "12202337.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "72f3c6af93ca483b8ca1ef8f3f0fa9a8",
+    "full_name": "Accountant",
+    "emails": [],
+    "phones": [
+      "28644727092"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "go",
+        "confidence": 0.6,
+        "sources": [
+          "nlp_body"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2012 Accountant City ,"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2015 Company Name ï¼​ City"
+      },
+      {
+        "company": null,
+        "title": "October",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "August 2015 Company Name City , State"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northern Maine Community College",
+        "degree": "Associate Degree",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 1994,
+        "grade": "3.41"
+      },
+      {
+        "institution": "Computer Applications Specialist Certificate Program",
+        "degree": null,
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2008,
+        "grade": null
+      },
+      {
+        "institution": "Vidyasagar University",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2000,
+        "grade": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Defense Financial Manager, CDFM, May",
+        "issuer": null,
+        "date": "2005",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "phones",
+        "source": "manual",
+        "method": "regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "skills",
+        "source": "manual",
+        "method": "nlp_phrase_matcher",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.7333,
+    "_meta": {
+      "file": "12338274.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "72f3c6af93ca483b8ca1ef8f3f0fa9a8",
+    "full_name": "Accountant",
+    "emails": [],
+    "phones": [
+      "28644727092"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": 11.0,
+    "skills": [
+      {
+        "name": "go",
+        "confidence": 0.6,
+        "sources": [
+          "nlp_body"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2012 Accountant City ,"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2015 Company Name ï¼​ City"
+      },
+      {
+        "company": null,
+        "title": "October",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "August 2015 Company Name City , State"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": "2015",
+        "end": "present",
+        "location": null,
+        "description": "to Current Company Name ï¼​ City"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northern Maine Community College",
+        "degree": "Associate Degree",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 1994,
+        "grade": "3.41"
+      },
+      {
+        "institution": "Computer Applications Specialist Certificate Program",
+        "degree": null,
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2008,
+        "grade": null
+      },
+      {
+        "institution": "Vidyasagar University",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2000,
+        "grade": null
+      },
+      {
+        "institution": "Strayer University",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": null,
+        "grade": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Defense Financial Manager, CDFM, May",
+        "issuer": null,
+        "date": "2005",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "phones",
+        "source": "manual",
+        "method": "regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "skills",
+        "source": "manual",
+        "method": "nlp_phrase_matcher",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "years_experience",
+        "source": "manual",
+        "method": "derived_from_dates",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.7556,
+    "_meta": {
+      "file": "12442909.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "72f3c6af93ca483b8ca1ef8f3f0fa9a8",
+    "full_name": "Accountant",
+    "emails": [],
+    "phones": [
+      "28644727092"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": 11.0,
+    "skills": [
+      {
+        "name": "go",
+        "confidence": 0.6,
+        "sources": [
+          "nlp_body"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": null,
+        "title": "Company Name",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2012 Accountant City ,"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to November 2015 Company Name ï¼​ City"
+      },
+      {
+        "company": null,
+        "title": "October",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "August 2015 Company Name City , State"
+      },
+      {
+        "company": null,
+        "title": "Accountant",
+        "start": "2015",
+        "end": "present",
+        "location": null,
+        "description": "to Current Company Name ï¼​ City"
+      },
+      {
+        "company": null,
+        "title": "Accountant II",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "02/2017 to Current Company Name â€“"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Northern Maine Community College",
+        "degree": "Associate Degree",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 1994,
+        "grade": "3.41"
+      },
+      {
+        "institution": "Computer Applications Specialist Certificate Program",
+        "degree": null,
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2008,
+        "grade": null
+      },
+      {
+        "institution": "Vidyasagar University",
+        "degree": "Bachelor of Arts",
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2000,
+        "grade": null
+      },
+      {
+        "institution": "Strayer University",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": null,
+        "grade": null
+      },
+      {
+        "institution": "University of Maryland",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Ce",
+        "start_year": null,
+        "end_year": 2010,
+        "grade": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Defense Financial Manager, CDFM, May",
+        "issuer": null,
+        "date": "2005",
+        "url": null
+      }
+    ],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "certifications",
+        "source": "manual",
+        "method": "section_parse",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "phones",
+        "source": "manual",
+        "method": "regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "skills",
+        "source": "manual",
+        "method": "nlp_phrase_matcher",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "years_experience",
+        "source": "manual",
+        "method": "derived_from_dates",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "summary",
+        "source": "manual",
+        "method": "nlp_sentence_seg",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.7556,
+    "_meta": {
+      "file": "12780508.pdf",
+      "status": "ok",
+      "error": null
+    }
+  },
+  {
+    "candidate_id": "1598206303424f46a240329fe6032efc",
+    "full_name": "Lead Accountant",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": "Highlights\nQuickBooks, Pea",
+      "region": "Pea",
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Financial Accounting",
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "Lead Accountant",
+        "start": null,
+        "end": null,
+        "location": null,
+        "description": "to Current Company Name ï¼​ City"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Accounting Business Administration",
+        "degree": null,
+        "field_of_study": "It",
+        "start_year": null,
+        "end_year": 2005,
+        "grade": null
+      }
+    ],
+    "certifications": [],
+    "projects": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "manual",
+        "method": "regex_heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "headline",
+        "source": "manual",
+        "method": "heuristic",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "location",
+        "source": "manual",
+        "method": "nlp_gpe",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "experience",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      },
+      {
+        "field": "education",
+        "source": "manual",
+        "method": "nlp_ner+regex",
+        "confidence": 1.0,
+        "raw_value": null
+      }
+    ],
+    "overall_confidence": 0.5389,
+    "_meta": {
+      "file": "12802330.pdf",
+      "status": "ok",
+      "error": null
+    }
+  }
+]
