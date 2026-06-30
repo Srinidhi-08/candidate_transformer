@@ -23,7 +23,16 @@ A high-performance, NLP-powered Extract, Transform, Load (ETL) pipeline for pars
    python -m spacy download en_core_web_sm
    ```
 
-3. **Database Configuration:**
+3. **Set up the Configuration File:**
+   Since the real configuration file is ignored to protect passwords, copy the example file to create your own:
+   ```bash
+   # On Windows:
+   copy config\pipeline_config.example.yaml config\pipeline_config.yaml
+   # On Mac/Linux:
+   cp config/pipeline_config.example.yaml config/pipeline_config.yaml
+   ```
+
+4. **Database Configuration:**
    Ensure PostgreSQL is running. The pipeline will automatically create the required tables. You can override credentials via environment variables:
    `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`
 
