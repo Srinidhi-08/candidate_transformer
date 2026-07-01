@@ -88,4 +88,4 @@ pytest tests/
   - **Cloud Deployment API**: The tool is currently a CLI. A FastAPI web wrapper was descoped in favor of optimizing the core extraction engine.
 
 ## Demo Video
-[Insert Demo Video Link Here]
+https://drive.google.com/file/d/1AuFKVZh7EZTDkuveBzNbF3vGgjcbezt_/view?usp=drivesdk
